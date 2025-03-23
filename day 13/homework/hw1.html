@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>მომხმარებლის რეგისტრაცია</title>
+</head>
+<body>
+
+    <h2>მომხმარებლის რეგისტრაცია</h2>
+
+    <form action="/submit-registration" method="post"> 
+        <label for="full_name">სრული სახელი:</label><br>
+        <input type="text" id="full_name" name="full_name" required><br><br>
+
+        <label for="email">ელ.ფოსტა:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="age">ასაკი:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="city">ქალაქი:</label><br>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <p>სქესი:</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">მამრობითი</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">მდედრობითი</label><br>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">სხვა</label><br><br>
+
+        <p>ჰობი:</p>
+        <input type="checkbox" id="reading" name="hobbies[]" value="reading" required>
+        <label for="reading">კითხვა</label><br>
+        <input type="checkbox" id="sports" name="hobbies[]" value="sports">
+        <label for="sports">სპორტი</label><br>
+        <input type="checkbox" id="music" name="hobbies[]" value="music">
+        <label for="music">მუსიკა</label><br><br>
+
+        <input type="submit" value="რეგისტრაცია">
+    </form>
+
+</body>
+</html>
