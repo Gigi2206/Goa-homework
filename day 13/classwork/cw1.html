@@ -1,0 +1,29 @@
+<!--1) შექმენით ფორმა სადაც მოხმარებელი შეიყვანს სახელს, ემაილს და სქესს. ასევე უნდა შეეძლოს ფორმის დადასტურება, დაიცავით სტანდარტები და გამოიყენეთ name, value, required ატრიბუტები. კომენტარებით ახსენით თითოეული ატრიბუტის დანიშნულება-->
+
+<html>
+<html>
+<head>
+<title>მომხმარებლის ფორმა</title>
+</head>
+<body>
+
+  <h2>მომხმარებლის ინფორმაციის შეყვანა</h2>
+
+  <form action="/action_page.php">
+    <label for="fname">სახელი:</label><br>
+    <input type="text" id="fname" name="fname" value="" required><br><br>
+    <label for="email">ელფოსტა:</label><br>
+    <input type="email" id="email" name="email" value="" required><br><br>
+    <label for="gender">სქესი:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">მამრობითი</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">მდედრობითი</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">სხვა</label><br><br>
+    <input type="submit" value="დადასტურება">
+    </form>
+
+</body>
+</html>
+

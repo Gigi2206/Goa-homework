@@ -1,5 +1,7 @@
 user = "gigi"
-level = 5
+level = 0
 level = 10
-print("level up")
-level = 15
+level = level + 1
+level = level + 1
+level = level + 1
+print(level)

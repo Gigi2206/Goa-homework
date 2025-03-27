@@ -17,6 +17,7 @@ new_book3 = book_3 - discount
 new_book4 = book_4 - discount
 
 print(new_book)
+print(new_book1)
 print(new_book2)
 print(new_book3)
 print(new_book4)

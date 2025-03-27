@@ -14,4 +14,3 @@ age = int(input("what is your age: "))
 height = height + (age * 0.5)
 #დავპრინტე ეს ყველა
 print(height)
-D
