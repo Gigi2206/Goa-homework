@@ -1,0 +1,59 @@
+<!--3) შექმენით საიტი პროგრამირების სწავლასთან დაკავშირებით, რომელზეც იქნება 2 ვიდეო tutorial 1 პითონის და 1 HTML-ის. თუ ვერ მოახერხებთ მსგავსი ვიდეო რესურსის შოვნას, მაშინ შექმენით საიტი რომელზეც იქნება 2 ვიდეო, თქვენთვის სასურველ საკითხზე-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>პროგრამირების სწავლა</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        .video-container {
+            margin-bottom: 30px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        video {
+            width: 100%;
+            max-width: 640px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>პროგრამირების სწავლა</h1>
+
+    <div class="video-container">
+        <h2>Python-ის შესავალი</h2>
+        <video controls poster="python_thumbnail.jpg">
+            <source src="https://via.placeholder.com/640x360.mp4?text=Python+Tutorial" type="video/mp4">
+            <p>თქვენი ბრაუზერი არ უჭერს მხარს ვიდეო ფორმატს.</p>
+        </video>
+        <p>ეს ვიდეო გაგაცნობთ Python პროგრამირების ენის საფუძვლებს.</p>
+    </div>
+
+    <div class="video-container">
+        <h2>HTML-ის საფუძვლები</h2>
+        <video controls poster="html_thumbnail.jpg">
+            <source src="https://via.placeholder.com/640x360.mp4?text=HTML+Tutorial" type="video/mp4">
+            <p>თქვენი ბრაუზერი არ უჭერს მხარს ვიდეო ფორმატს.</p>
+        </video>
+        <p>ეს ვიდეო დაგეხმარებათ HTML-ის ძირითადი კონცეფციების გაგებაში.</p>
+    </div>
+
+</body>
+</html>

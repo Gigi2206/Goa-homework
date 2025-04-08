@@ -1,0 +1,53 @@
+<!--6) შექმენით საიტი, რომელზეც დაამატებთ თქვენთვის სასურველ ვიდეოს (თუ ვიდეო არ გაქვთ გამოიყენეთ რესურსები) მინიმუმ 2 ფორმატში: mp4 და mkv შეეცადეთ დაიცვათ სტრუქტურა-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ვიდეო სხვადასხვა ფორმატში</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .video-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            max-width: 640px;
+            height: auto;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        p {
+            color: #777;
+            font-size: 0.9em;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <h1>ვიდეო პლეერი</h1>
+        <video controls poster="video_thumbnail.jpg">
+            <source src="placeholder_video.mp4" type="video/mp4">
+            <source src="placeholder_video.mkv" type="video/x-matroska">
+            <p>თქვენი ბრაუზერი არ უჭერს მხარს ვიდეო ფორმატს.</p>
+        </video>
+        <p>ვიდეო წარმოდგენილია MP4 და MKV ფორმატებში.</p>
+        <p style="color: red;">გაითვალისწინეთ, რომ MKV ფორმატი შესაძლოა არ იყოს მხარდაჭერილი ყველა ბრაუზერის მიერ.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!--5) შექმენით თქვენი პორტფოლიოს საიტი, რომელზეც მოცემული იქნება თქვენს შესახებ ინფორმაცია და სურათები, თქვენი შესრულებული პროექტები და ცოდნა პროგრამირებაში. დაიცავით page layout (საიტის განლაგების პრინციპი რომლის თანახმად body თეგი იყოფა 3 ნაწილად: header, main, footer) ასევე ახსენით რა არის page layout კომენატრების საშვალებით, გამოიყენეთ ყველაფერი რაც აქამდე ისწავლეთ-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჩემი პორტფოლიო</title>
+    <style>
+        /* CSS სტილები საიტის გასაფორმებლად (იგივე რაც წინა პასუხში) */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            flex-grow: 1; /* main სექცია იკავებს დარჩენილ ვერტიკალურ სივრცეს */
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .about-me, .projects, .skills {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            border: 1px solid #eee;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .skill-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-list li {
+            display: inline-block;
+            background-color: #e0e0e0;
+            color: #333;
+            padding: 5px 10px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ჩემი პორტფოლიო</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">ჩემ შესახებ</a></li>
+                <li><a href="#projects">პროექტები</a></li>
+                <li><a href="#skills">ცოდნა</a></li>
+                <li><a href="#contact">კონტაქტი</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <audio autoplay muted loop style="display: none;">
+        <source src="background_music.mp3" type="audio/mpeg">
+        <source src="background_music.ogg" type="audio/ogg">
+        <p>თქვენი ბრაუზერი არ უჭერს მხარს აუდიო ფორმატს.</p>
+    </audio>
+
+    <main>
+        <section id="about" class="about-me">
+            <h2>ჩემ შესახებ</h2>
+            <img src="your_profile_picture.jpg" alt="ჩემი ფოტო" width="150">
+            <p>გამარჯობა! მე ვარ [თქვენი სახელი], დამწყები პროგრამისტი დიდი ენთუზიაზმით ვებ ტექნოლოგიების მიმართ. მაინტერესებს ფრონტ-ენდ და ბექ-ენდ განვითარება. ვსწავლობ და ვვითარდები სხვადასხვა პროგრამირების ენებსა და ტექნოლოგიებში.</p>
+            <p>ჩემი მიზანია შევქმნა ინოვაციური და ფუნქციონალური ვებ აპლიკაციები, რომლებიც მომხმარებლისთვის სასარგებლო იქნება.</p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>ჩემი პროექტები</h2>
+            <div class="project">
+                <h3>პროექტი 1: მარტივი Todo აპლიკაცია</h3>
+                <img src="project1_screenshot.jpg" alt="Todo აპლიკაციის სქრინშოტი" width="300">
+                <p>ეს არის მარტივი Todo აპლიკაცია, რომელიც საშუალებას გაძლევთ დაამატოთ, წაშალოთ და მონიშნოთ შესასრულებელი ამოცანები. პროექტი შეიქმნა HTML, CSS და JavaScript-ის გამოყენებით.</p>
+                <a href="#">იხილეთ პროექტი</a>
+            </div>
+
+            <div class="project">
+                <h3>პროექტი 2: პერსონალური ბლოგი</h3>
+                <img src="project2_screenshot.jpg" alt="ბლოგის სქრინშოტი" width="300">
+                <p>ეს არის ჩემი პერსონალური ბლოგი, სადაც ვწერ სხვადასხვა თემებზე, რომლებიც მაინტერესებს. ბლოგის ძირითადი სტრუქტურა აწყობილია HTML-ით და სტილიზებულია CSS-ით.</p>
+                <a href="#">იხილეთ პროექტი</a>
+            </div>
+            </section>
+
+        <section id="skills" class="skills">
+            <h2>ჩემი ცოდნა პროგრამირებაში</h2>
+            <ul class="skill-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                </ul>
+            <p>გარდა ამ ენებისა, ვსწავლობ [სხვა ტექნოლოგიები ან ენები, რომლებსაც ფლობთ ან სწავლობთ].</p>
+        </section>
+
+        <section id="contact">
+            <h2>კონტაქტი</h2>
+            <p>შეგიძლიათ დამიკავშირდეთ შემდეგი საშუალებებით:</p>
+            <ul>
+                <li>ელ. ფოსტა: <a href="mailto:your_email@example.com">your_email@example.com</a></li>
+                <li>LinkedIn: <a href="your_linkedin_profile">თქვენი LinkedIn პროფილი</a></li>
+                <li>GitHub: <a href="your_github_profile">თქვენი GitHub პროფილი</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 [თქვენი სახელი]. ყველა უფლება დაცულია.</p>
+    </footer>
+
+</body>
+</html>
