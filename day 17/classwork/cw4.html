@@ -1,0 +1,23 @@
+<!--4) შექმენით მარტივი სტრუქტურის ვეგბერდი, რომელზეც იქნება მულტი-მედია ელემენტები: ვიდეო & აუდიო. ორივე მედია ელემენტს უნდა ჰქონდეს მარტვის ატრიბუტები: loop, autoplay, muted-->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>აუდიო ატრიბუტებით</title>
+</head>
+<body>
+
+    <h2>აუდიო ატრიბუტებით</h2>
+
+    <audio controls loop autoplay muted>
+        <source src="myaudio.mp3" type="audio/mpeg">
+        <source src="myaudio.ogg" type="audio/ogg">
+        <source src="myaudio.wav" type="audio/wav">
+        <p>თქვენი ბრაუზერი არ უჭერს აუდიო ფორმატს.</p>
+    </audio>
+
+</body>
+</html>
+
