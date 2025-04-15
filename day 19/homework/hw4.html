@@ -1,0 +1,137 @@
+<!--5) შექმენით ერთგვერდიანი ან მრავალგვერდიანი (თქვენით აარჩიეთ ტიპი) პორტფოლიოს საიტი ნავიგაციით, page layout-ის და ყველა სტანდარტის დაცვით. ლინკებით ჩასვით თქვენი აქამდე შესრულებული ყველა პროექტი. საიტის დიზაინი გაალამაზეთ style ატრიბუტის დახმარებით-->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჩემი პორტფოლიო</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+            border-bottom: 3px solid #e0e0e0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .project-link {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #007bff;
+            background-color: #f9f9f9;
+        }
+        .project-link:hover {
+            background-color: #eee;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ჩემი პორტფოლიო</h1>
+        <nav>
+            <ul>
+                <li><a href="#ჩემს_შესახებ">ჩემს შესახებ</a></li>
+                <li><a href="#პროექტები">პროექტები</a></li>
+                <li><a href="#კონტაქტი">კონტაქტი</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="ჩემს_შესახებ">
+            <h2>ჩემს შესახებ</h2>
+            <p>გამარჯობა! მე ვარ ვებ-დეველოპერი/პროგრამისტი (ჩასვით თქვენი პროფესია). მაქვს გამოცდილება ვებ-გვერდების და აპლიკაციების შექმნაში HTML, CSS, JavaScript და სხვა ტექნოლოგიების გამოყენებით. ჩემი მიზანია შევქმნა ფუნქციონალური, მოსახერხებელი და ვიზუალურად მიმზიდველი ვებ-გვერდები.</p>
+            <p>ამ პორტფოლიოში შეგიძლიათ იხილოთ ჩემი აქამდე შესრულებული პროექტები.</p>
+        </section>
+
+        <section id="პროექტები">
+            <h2>ჩემი პროექტები</h2>
+            <div>
+                <a href="ლინკი_თქვენი_პირველი_პროექტისკენ" class="project-link" target="_blank">
+                    პროექტი 1: (აღწერა თქვენი პირველი პროექტის შესახებ)
+                </a>
+                <a href="ლინკი_თქვენი_მეორე_პროექტისკენ" class="project-link" target="_blank">
+                    პროექტი 2: (აღწერა თქვენი მეორე პროექტის შესახებ)
+                </a>
+                <a href="ლინკი_თქვენი_მესამე_პროექტისკენ" class="project-link" target="_blank">
+                    პროექტი 3: (აღწერა თქვენი მესამე პროექტის შესახებ)
+                </a>
+                <a href="recipe.html" class="project-link" target="_blank">
+                    პროექტი 4: რეცეპტების გვერდი
+                </a>
+                <a href="goa.html" class="project-link" target="_blank">
+                    პროექტი 5: საიტი GOA-ს შესახებ
+                </a>
+                </div>
+        </section>
+
+        <section id="კონტაქტი">
+            <h2>კონტაქტი</h2>
+            <p>შეგიძლიათ დამიკავშირდეთ შემდეგი საშუალებებით:</p>
+            <ul>
+                <li>ელ. ფოსტა: <a href="mailto:თქვენი_ელფოსტა">თქვენი_ელფოსტა</a></li>
+                <li>LinkedIn: <a href="თქვენი_LinkedIn_პროფილის_ლინკი" target="_blank">თქვენი LinkedIn</a></li>
+                <li>GitHub: <a href="თქვენი_GitHub_პროფილის_ლინკი" target="_blank">თქვენი GitHub</a></li>
+                </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ჩემი პორტფოლიო</p>
+    </footer>
+
+</body>
+</html>

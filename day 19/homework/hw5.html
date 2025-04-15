@@ -1,0 +1,109 @@
+<!--6) შექმენით მსგავსი დიზანი style ატრიბუტის გამოყენებით-->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გვერდის განლაგება</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* ღია ცისფერი ფონი */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: yellow;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            width: 80%;
+            margin-top: 20px;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        main {
+            background-color: lightskyblue;
+            padding: 20px;
+            width: 80%;
+            display: flex;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+
+        .main-content {
+            flex: 2; /* Section 1 და Section 2 იკავებს მეტ ადგილს */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section {
+            background-color: lightgray;
+            color: black;
+            padding: 15px;
+            text-align: left;
+            margin-bottom: 10px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .aside {
+            background-color: lightgray;
+            color: black;
+            padding: 15px;
+            text-align: left;
+            flex: 1;
+            margin-left: 10px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            height: fit-content; /* რომ სიმაღლე მოერგოს კონტენტს */
+        }
+
+        footer {
+            background-color: magenta;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 80%;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Header
+    </header>
+
+    <main>
+        <div class="main-content">
+            <div class="section">
+                Section 1
+            </div>
+            <div class="section">
+                Section 2
+            </div>
+            <div style="background-color: transparent; height: 0; margin: 0; padding: 0;">
+                Main
+            </div>
+        </div>
+        <aside class="aside">
+            Aside
+        </aside>
+    </main>
+
+    <footer>
+        Footer
+    </footer>
+
+</body>
+</html>
