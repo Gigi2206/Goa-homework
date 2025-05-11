@@ -1,0 +1,77 @@
+<!--3) ახსენით ტერმინები: დეკლარაცია, კუთვნილება მნიშვნელობა, CSS-ის წესი. მოიყვანეთ თითოეულზე მაგალითები-->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ტერმინები HTML-ში</title>
+</head>
+<body>
+
+    <h1>CSS-ის წესი, დეკლარაცია, კუთვნილება, მნიშვნელობა</h1>
+
+    <div style="border: 1px solid black; padding: 15px; margin-bottom: 20px;">
+        <h2>CSS-ის წესი (CSS Rule)</h2>
+        <p>CSS-ის წესი განსაზღვრავს, თუ როგორ გამოიყურება HTML ელემენტი. იგი შედგება <strong>სელექტორისა</strong> და <strong>დეკლარაციის ბლოკისგან</strong>.</p>
+        <pre style="background-color: #f0f0f0; padding: 10px; border: 1px solid #ccc;">
+            <code>
+                &lt;style&gt;
+                  h2 { /* სელექტორი - h2 ელემენტი */
+                    color: green; /* დეკლარაცია */
+                    text-align: center; /* კიდევ ერთი დეკლარაცია */
+                  }
+
+                  .important-paragraph { /* სელექტორი - class="important-paragraph" მქონე ელემენტები */
+                    font-size: 18px; /* დეკლარაცია */
+                    font-weight: bold; /* დეკლარაცია */
+                  }
+                &lt;/style&gt;
+            </code>
+        </pre>
+        <h2 style="color: green; text-align: center;">ეს არის h2 ელემენტი, რომელსაც CSS-ის წესი აქვს გამოყენებული.</h2>
+        <p class="important-paragraph" style="font-size: 18px; font-weight: bold;">ეს არის პარაგრაფი class-ით "important-paragraph", რომელსაც CSS-ის წესი აქვს გამოყენებული.</p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 15px; margin-bottom: 20px;">
+        <h2>დეკლარაცია (Declaration)</h2>
+        <p>დეკლარაცია განსაზღვრავს კონკრეტულ სტილს ელემენტისთვის. იგი შედგება <strong>კუთვნილებისა</strong> და მისი <strong>მნიშვნელობისგან</strong>.</p>
+        <pre style="background-color: #f0f0f0; padding: 10px; border: 1px solid #ccc;">
+            <code>
+                color: green; /* დეკლარაცია */
+                text-align: center; /* დეკლარაცია */
+                font-size: 18px; /* დეკლარაცია */
+                font-weight: bold; /* დეკლარაცია */
+            </code>
+        </pre>
+        <p>ზემოთ მოყვანილია დეკლარაციების მაგალითები.</p>
+    </div>
+
+    <div style="border: 1px solid black; padding: 15px; margin-bottom: 20px;">
+        <h2>კუთვნილება (Property)</h2>
+        <p>კუთვნილება არის CSS-ის სტილის ატრიბუტი, რომელსაც იყენებთ ელემენტის გარეგნობის შესაცვლელად.</p>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li><code>color</code> - ტექსტის ფერი</li>
+            <li><code>text-align</code> - ტექსტის განლაგება</li>
+            <li><code>font-size</code> - ტექსტის ზომა</li>
+            <li><code>font-weight</code> - ტექსტის სისქე</li>
+            <li><code>background-color</code> - ფონის ფერი</li>
+            </ul>
+    </div>
+
+    <div style="border: 1px solid black; padding: 15px; margin-bottom: 20px;">
+        <h2>მნიშვნელობა (Value)</h2>
+        <p>მნიშვნელობა განსაზღვრავს, თუ რა სტილი მიენიჭება კონკრეტულ CSS კუთვნილებას.</p>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>ფერის მნიშვნელობები: <code>green</code>, <code>blue</code>, <code>#ff0000</code></li>
+            <li>ზომის მნიშვნელობები: <code>18px</code>, <code>1.5em</code>, <code>100%</code></li>
+            <li>საკვანძო სიტყვები: <code>center</code>, <code>bold</code>, <code>italic</code></li>
+            </ul>
+    </div>
+
+    <footer style="text-align: center; margin-top: 30px; color: #777;">
+        <p>&copy; 2023 CSS ტერმინების ახსნა</p>
+    </footer>
+
+</body>
+</html>

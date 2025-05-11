@@ -1,0 +1,142 @@
+<!--2) შექმენით მრავალგვერდიანი საიტი კრიპტო ვალუტის შესახებ, რომელშიც გამოიყენებთ ყველა თეგს რაც აქამდე ისწავლეთ: page layout, lists, tables, nav, multi-media (video, audio), forms, divs. დიზაინი დახვეწეთ Inline CSS - style ატრიბუტის საშვალებით-->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კრიპტოვალუტა - ერთი გვერდი</title>
+</head>
+<body style="font-family: sans-serif; margin: 0; background-color: #f4f4f4; color: #333;">
+    <header style="background-color: #333; color: #fff; padding: 1em 0; text-align: center;">
+        <h1 style="margin: 0;">კრიპტოვალუტის სამყარო</h1>
+    </header>
+
+    <nav style="background-color: #ddd; padding: 0.5em 0; text-align: center;">
+        <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="display: inline; margin: 0 1em;"><a href="#მთავარი" style="text-decoration: none; color: #333;">მთავარი</a></li>
+            <li style="display: inline; margin: 0 1em;"><a href="#რა_არის_კრიპტო" style="text-decoration: none; color: #333;">რა არის კრიპტოვალუტა</a></li>
+            <li style="display: inline; margin: 0 1em;"><a href="#პოპულარული_კრიპტოები" style="text-decoration: none; color: #333;">პოპულარული კრიპტოები</a></li>
+            <li style="display: inline; margin: 0 1em;"><a href="#კრიპტო_ბირჟები" style="text-decoration: none; color: #333;">კრიპტო ბირჟები</a></li>
+            <li style="display: inline; margin: 0 1em;"><a href="#კონტაქტი" style="text-decoration: none; color: #333;">კონტაქტი</a></li>
+        </ul>
+    </nav>
+
+    <div style="padding: 20px;">
+        <section id="მთავარი" style="margin-bottom: 20px;">
+            <h2 style="color: #007bff;">კეთილი იყოს თქვენი მობრძანება!</h2>
+            <p style="line-height: 1.6;">ეს არის საიტი, რომელიც ეძღვნება კრიპტოვალუტებს. აქ თქვენ შეძლებთ გაიგოთ მეტი ციფრული ვალუტების, მათი ისტორიის, ტექნოლოგიებისა და გამოყენების შესახებ.</p>
+            <div style="margin-top: 15px;">
+                <video width="560" height="315" controls style="border: 1px solid #ccc;">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    თქვენი ბრაუზერი არ უჭერს ვიდეოს დაკვრას.
+                </video>
+            </div>
+        </section>
+
+        <section id="რა_არის_კრიპტო" style="margin-bottom: 20px;">
+            <h2 style="color: #007bff;">რა არის კრიპტოვალუტა?</h2>
+            <p style="line-height: 1.6;">კრიპტოვალუტა არის ციფრული ან ვირტუალური ვალუტა, რომელიც იყენებს კრიპტოგრაფიას უსაფრთხოებისთვის. ბევრი კრიპტოვალუტა არის დეცენტრალიზებული ქსელები, რომლებიც დაფუძნებულია ბლოკჩეინის ტექნოლოგიაზე - განაწილებულ ლეჯერს, რომელსაც მართავს კომპიუტერების განაწილებული ქსელი.</p>
+        </section>
+
+        <section style="margin-bottom: 20px;">
+            <h2 style="color: #007bff;">ბლოკჩეინის ტექნოლოგია</h2>
+            <p style="line-height: 1.6;">ბლოკჩეინი არის ტექნოლოგია, რომელიც კრიპტოვალუტების უმეტესობის საფუძველს წარმოადგენს. ის წარმოადგენს მონაცემთა ბლოკების უწყვეტ ჯაჭვს, სადაც თითოეული ბლოკი შეიცავს ტრანზაქციების ჩანაწერებს და დაკავშირებულია წინა ბლოკთან კრიპტოგრაფიული ჰეშით.</p>
+        </section>
+
+        <section style="margin-bottom: 20px;">
+            <h2 style="color: #007bff;">როგორ მუშაობს კრიპტოვალუტა?</h2>
+            <p style="line-height: 1.6;">ტრანზაქციები კრიპტოვალუტის ქსელში ვერიფიცირდება და ემატება ბლოკჩეინს მაინინგის ან სხვა კონსენსუსის მექანიზმების საშუალებით. ეს უზრუნველყოფს გამჭვირვალობასა და უსაფრთხოებას.</p>
+            <div style="margin-top: 15px;">
+                <audio controls style="width: 100%; border: 1px solid #ccc;">
+                    <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                    თქვენი ბრაუზერი არ უჭერს აუდიოს დაკვრას.
+                </audio>
+            </div>
+        </section>
+
+        <section id="პოპულარული_კრიპტოები" style="margin-bottom: 20px;">
+            <h2 style="color: #007bff;">პოპულარული კრიპტოვალუტები</h2>
+            <ul style="list-style-type: square; margin-left: 20px;">
+                <li style="margin-bottom: 10px;">
+                    <strong style="color: #555;">Bitcoin (BTC)</strong> - პირველი და ყველაზე ცნობილი კრიპტოვალუტა.
+                    <p style="margin-top: 5px; line-height: 1.6;">დეცენტრალიზებული ციფრული ვალუტა, რომელიც შეიქმნა 2009 წელს სატოში ნაკამოტოს მიერ.</p>
+                </li>
+                <li style="margin-bottom: 10px;">
+                    <strong style="color: #555;">Ethereum (ETH)</strong> - პლატფორმა დეცენტრალიზებული აპლიკაციებისთვის (dApps) და ჭკვიანი კონტრაქტებისთვის.
+                    <p style="margin-top: 5px; line-height: 1.6;">შემოთავაზებული იქნა ვიტალიკ ბუტერინის მიერ 2013 წელს.</p>
+                </li>
+                <li style="margin-bottom: 10px;">
+                    <strong style="color: #555;">Litecoin (LTC)</strong> - პირი-დან-პირზე კრიპტოვალუტა, რომელიც ხშირად მოიხსენიება როგორც "ვერცხლი ოქროსთვის (Bitcoin)".
+                    <p style="margin-top: 5px; line-height: 1.6;">შექმნილია ჩარლი ლის მიერ 2011 წელს.</p>
+                </li>
+            </ul>
+
+            <h2 style="color: #007bff; margin-top: 20px;">კრიპტოვალუტების შედარება</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+                <thead style="background-color: #ddd;">
+                    <tr>
+                        <th style="padding: 8px; border: 1px solid #ccc; text-align: left;">სახელი</th>
+                        <th style="padding: 8px; border: 1px solid #ccc; text-align: left;">სიმბოლო</th>
+                        <th style="padding: 8px; border: 1px solid #ccc; text-align: left;">გამოშვების წელი</th>
+                        <th style="padding: 8px; border: 1px solid #ccc; text-align: left;">ძირითადი დანიშნულება</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #ccc;">Bitcoin</td>
+                        <td style="padding: 8px; border: 1px solid #ccc;">BTC</td>
+                        <td style="padding: 8px; border: 1px solid #ccc;">2009</td>
+                        <td style="padding: 8px; border: 1px solid #ccc;">ციფრული ოქრო, გადახდები</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #ccc;">Ethereum</td>
+                        <td style="padding: 8px; border: 1px solid #ccc;">ETH</td>
+                        <td style="padding: 8px; border: 1px solid #ccc;">2015</td>
+                        <td style="padding: 8px; border: 1px solid #ccc;">dApps, ჭკვიანი კონტრაქტები</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 8px; border: 1px solid #ccc;">Litecoin</td>
+                        <td style="padding: 8px; border: 1px solid #ccc;">LTC</td>
+                        <td style="padding: 8px; border: 1px solid #ccc;">2011</td>
+                        <td style="padding: 8px; border: 1px solid #ccc;">სწრაფი და იაფი ტრანზაქციები</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="კრიპტო_ბირჟები" style="margin-bottom: 20px;">
+            <h2 style="color: #007bff;">პოპულარული კრიპტო ბირჟები</h2>
+            <ol style="list-style-type: decimal; margin-left: 20px;">
+                <li style="margin-bottom: 5px;"><a href="#" style="color: #007bff; text-decoration: none;">Binance</a> - ერთ-ერთი უდიდესი ბირჟა ვაჭრობის მოცულობით.</li>
+                <li style="margin-bottom: 5px;"><a href="#" style="color: #007bff; text-decoration: none;">Coinbase</a> - პოპულარული ბირჟა დამწყებთათვის.</li>
+                <li style="margin-bottom: 5px;"><a href="#" style="color: #007bff; text-decoration: none;">Kraken</a> - ცნობილია თავისი უსაფრთხოებითა და მრავალფეროვანი სავაჭრო წყვილებით.</li>
+            </ol>
+        </section>
+
+        <section id="კონტაქტი">
+            <h2 style="color: #007bff;">კონტაქტი</h2>
+            <form action="#" method="post" style="max-width: 500px; margin: 0 auto; padding: 15px; border: 1px solid #ccc; background-color: #fff;">
+                <div style="margin-bottom: 10px;">
+                    <label for="name" style="display: block; margin-bottom: 5px;">სახელი:</label>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; border: 1px solid #ddd; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label for="email" style="display: block; margin-bottom: 5px;">ელ. ფოსტა:</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; border: 1px solid #ddd; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label for="message" style="display: block; margin-bottom: 5px;">შეტყობინება:</label>
+                    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 8px; border: 1px solid #ddd; box-sizing: border-box;"></textarea>
+                </div>
+                <button type="submit" style="background-color: #007bff; color: #fff; padding: 10px 15px; border: none; cursor: pointer;">გაგზავნა</button>
+            </form>
+        </section>
+    </div>
+
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 1em 0; width: 100%;">
+        <p style="margin: 0;">&copy; 2023 კრიპტოვალუტის საინფორმაციო პორტალი</p>
+    </footer>
+</body>
+</html>

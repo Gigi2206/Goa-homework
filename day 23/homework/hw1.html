@@ -1,0 +1,41 @@
+<!--2) ახსენით რას აკეთებს rowspan და colspan ატრიბუტები, მოიყვანეთ მაგალითები-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>rowspan და colspan-ის კომბინირებული მაგალითი</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<h2>rowspan და colspan-ის კომბინირებული მაგალითი</h2>
+
+<table>
+  <tr>
+    <th rowspan="2" colspan="2">ინფორმაცია</th>
+    <th>სხვა</th>
+  </tr>
+  <tr>
+    <th>დამატებითი</th>
+  </tr>
+  <tr>
+    <td>მონაცემი 1</td>
+    <td>მონაცემი 2</td>
+    <td>მონაცემი 3</td>
+  </tr>
+  <tr>
+    <td>მონაცემი 4</td>
+    <td colspan="2">გაერთიანებული მონაცემი</td>
+  </tr>
+</table>
+
+</body>
+</html>
